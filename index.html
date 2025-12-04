@@ -2,9 +2,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
 
@@ -14,30 +13,52 @@
   </head>
   <body>
     <header class="header">
-      <div class="logo">NameToBeDetermined</div>
-      <div class="search">
-        <span class="material-icons-outlined"> search </span>
-        <input
-          type="search"
-          placeholder="Search for items, brands, categories..."
-        />
-        <button class="btn btn--primary">Search</button>
-      </div>
+      <div class="inner-container">
+        <div class="logo">NameToBeDetermined</div>
+        <div class="search">
+          <span class="material-symbols-outlined"> search </span>
+          <input
+            type="search"
+            placeholder="Search for items, brands, categories..."
+          />
+          <button class="btn btn--primary">Search</button>
+        </div>
 
-      <span class="material-icons-outlined"> favorite_border </span>
+        <span class="material-icons-outlined"> favorite_border </span>
 
-      <div class="user-profile">
-        <span class="material-icons-outlined"> account_circle </span>
-        <span class="material-icons-outlined"> shopping_cart </span>
+        <div class="user-profile">
+          <span class="material-icons-outlined"> account_circle </span>
+          <span class="material-icons-outlined"> shopping_cart </span>
+        </div>
+        <nav>
+          <img src="" alt="" class="logo" />
+        </nav>
       </div>
-      <nav>
-        <img src="" alt="" class="logo" />
-      </nav>
     </header>
 
-    <main>
+    <nav class="top-nav">
+      <div class="inner-container">
+        <ul>
+          <li>
+            <a href="#" class="nav-links">
+              <span class="material-symbols-outlined"> home </span>Home
+            </a>
+          </li>
+          <li><a href="#" class="nav-links">Hot deals</a></li>
+          <li><a href="#" class="nav-links">Categories</a></li>
+          <li><a href="#" class="nav-links">Promotions</a></li>
+          <li><a href="#" class="nav-links">New products</a></li>
+          <li><a href="#" class="nav-links">Track order</a></li>
+          <li>
+            <a href="#" class="nav-links">
+              <span class="material-symbols-outlined"> </span
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-      
+    <main>
       <!-- HERO  -->
       <section class="container">
         <div class="hero">
@@ -135,7 +156,7 @@
 
       <section class="product container">
         <div class="section-head">
-          <h2>Shoppping Categories</h2>
+          <h2>Items</h2>
           <a href="#" class="btn btn--ghost"> view all</a>
         </div>
 
@@ -188,46 +209,107 @@
               Add to Cart
             </button>
           </div>
+
+             <div class="product-card">
+            <img
+              src="images/product01.png"
+              alt="red strawberry"
+              class="product-image"
+            />
+            <p class="product-card-title">Fresh Tomatoes</p>
+            <p class="product-card-price">₦ 1,200</p>
+            <button class="btn btn--primary product-card-btn">
+              Add to Cart
+            </button>
+          </div>
+          <div class="product-card">
+            <img
+              src="images/product02.png"
+              alt="red strawberry"
+              class="product-image"
+            />
+            <p class="product-card-title">Golden Penny Spaghetti</p>
+            <p class="product-card-price">₦ 900</p>
+            <button class="btn btn--primary product-card-btn">
+              Add to Cart
+            </button>
+          </div>
+          <div class="product-card">
+            <img
+              src="images/product03.png"
+              alt="red strawberry"
+              class="product-image"
+            />
+            <p class="product-card-title">Oral-B Toothpaste</p>
+            <p class="product-card-price">₦ 1,400</p>
+            <button class="btn btn--primary product-card-btn">
+              Add to Cart
+            </button>
+          </div>
+          <div class="product-card">
+            <img
+              src="images/product04.png"
+              alt="red strawberry"
+              class="product-image"
+            />
+            <p class="product-card-title">Baby Pampers</p>
+            <p class="product-card-price">₦ 2,800</p>
+            <button class="btn btn--primary product-card-btn">
+              Add to Cart
+            </button>
+          </div>
         </div>
       </section>
 
       <!-- FOOTER -->
 
-      <footer class="footer container">
+      <footer class="footer">
         <div class="footer-top">
           <div class="footer-col">
             <h4>Logo goes here</h4>
             <p>Shop anything you need - delivered quickly.</p>
-            <ul>
-              <li>Addess:</li>
-              <li>Call Us:</li>
-              <li>Email:</li>
-              <li>Work hours:</li>
-            </ul>
+
+            <div class="footer-links">
+              <ul>
+                <li>Addess:</li>
+                <li>Call Us:</li>
+                <li>Email:</li>
+                <li>Work hours:</li>
+              </ul>
+            </div>
           </div>
 
           <div class="footer-col">
             <h4>Account</h4>
-            <ul>
+
+             <div class="footer-links">
+                <ul>
               <li><a href="#">Login</a></li>
               <li><a href="#">My Orders</a></li>
               <li><a href="#">Wishlist</a></li>
               <li><a href="#">Track Orders</a></li>
             </ul>
+             </div>
+          
           </div>
           <div class="footer-col">
-            <h4>Usefil links</h4>
-            <ul>
+            <h4>Useful links</h4>
+
+              <div class="footer-links">
+                 <ul>
               <li><a href="#">About Us</a></li>
               <li><a href="#">Contact</a></li>
               <li><a href="#">Hot deals</a></li>
               <li><a href="#">Promotions</a></li>
               <li><a href="#">New Products</a></li>
             </ul>
+              </div>
+           
           </div>
           <div class="footer-col">
             <h4>Help Center</h4>
-            <ul>
+              <div class="footer-links">
+<ul>
               <li><a href="#">Payments</a></li>
               <li><a href="#">Refund</a></li>
               <li><a href="#">Checkout</a></li>
@@ -235,6 +317,8 @@
               <li><a href="#">Q & A</a></li>
               <li><a href="#">Privacy Policy</a></li>
             </ul>
+              </div>
+            
           </div>
         </div>
 
