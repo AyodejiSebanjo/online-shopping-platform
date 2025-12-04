@@ -64,6 +64,50 @@
   --small: 14px;
   --caption: 12px;
 }
+/* BUTTONS STYLING */
+
+.btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 24px;
+  font-size: 22px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+ transition: transform 140ms ease, box-shadow 140ms ease, background-color 140ms ease;
+
+}
+
+.btn:active{
+    transform: translateY(1px);
+}
+
+.btn--primary{
+  background: var(--primary-500);
+  color: var(--foreground);
+}
+
+.btn--primary:active{
+  background-color: var(--primary-500);
+}
+.btn--primary:hover{
+  background-color: var(--primary-500);
+ 
+}
+
+.btn--ghost{
+  background: transparent;
+  color: var(--color-primary-600);
+  border: 2px solid rgba(58,191,74,0.12);
+}
+
+/* END OF BUTTON STYLING */
+
+
 
 html,
 body {
@@ -146,7 +190,86 @@ body {
     border-radius: var(--radius-md);
     align-items: center;
     justify-content: space-between;
-    gap: 8px;
+    gap: 8px;    
+}
 
-    
+.features{
+ display: flex; 
+ flex-direction: column;
+}
+
+.feature-grid{
+   display: flex; 
+ flex-direction: row;
+ gap: var(--space-lg);
+}
+
+.feature-card{
+  flex: 1;
+  background-color: var(--foreground);
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  text-align: center;
+
+}
+
+.feature-card h4{
+ font-size: var(--h5-size);
+ margin-bottom: var(--space-md);
+
+}
+.feature-card p{
+ font-size: 24px;
+ margin-bottom: var(--space-md);
+ color: var(--dark-text-secondary);
+
+}
+
+
+/* PRODUCT SECTION  */
+
+.product{
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-xl);
+}
+
+.product-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  /* align-items: center;
+  justify-content: space-between; */
+}
+
+.product-card{
+  background-color: var(--foreground);
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-md);
+  border-radius: var(--radius-lg);
+  gap: var(--space-sm);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+}
+
+.product-image{
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.product-card-title{
+  font-size: var(--h5-size);
+  font-weight: 600;
+  color: var(--dark-text-primary);
+}
+
+.product-card-price{
+  font-size: var(--h5-size);
+  font-weight: 500;
+  margin-bottom: var(--space-md);
+}
+
+.product-card-btn{
+  margin-top: auto;
+  align-self: stretch;
 }
